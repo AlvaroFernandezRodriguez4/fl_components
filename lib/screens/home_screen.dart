@@ -1,3 +1,4 @@
+import 'package:fl_components/screens/listview1_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -18,6 +19,7 @@ class HomeScreen extends StatelessWidget {
           ),
           title: const Text('Nombre de la ruta'),
           onTap: (){
+            Navigator.pushNamed(context, 'card');
           },
         ),
         separatorBuilder: (context, index) => const Divider(),
