@@ -18,7 +18,6 @@ class HomeScreen extends StatelessWidget {
           ),
           title: const Text('Nombre de la ruta'),
           onTap: (){
-
           },
         ),
         separatorBuilder: (context, index) => const Divider(),
