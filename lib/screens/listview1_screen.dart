@@ -10,7 +10,7 @@ class Listview1Screen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
           title: const Text("ListView Tipo 1"),
-          backgroundColor: const Color.fromARGB(255, 19, 75, 112),
+          //backgroundColor: const Color.fromARGB(255, 19, 75, 112),
           foregroundColor: Colors.white),
       body: ListView(
         children: [
