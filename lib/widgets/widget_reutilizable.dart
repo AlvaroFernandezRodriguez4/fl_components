@@ -31,7 +31,30 @@ class WidgetReutilizable extends StatelessWidget {
                 borderRadius: BorderRadius.circular(4),
               ),
               elevation: 8, 
-            )
+              child: Column(
+                children: [
+                  FadeInImage(
+                    image: NetworkImage(imagenUrl),
+                    placeholder: const AssetImage('assets/Loading_icon.gif'), // Imagen de carga
+                    width: double.infinity,
+                    fit: BoxFit.contain,
+                    fadeInDuration: const Duration(milliseconds: 2000), // Duración de la animación de entrada
+                    imageErrorBuilder: (context, error, stackTrace) {
+                      return const SizedBox(
+                        height: 200,
+                        child: Center(
+                          child: Icon(
+                            Icons.broken_image,
+                            size: 100,
+                            color: Colors.red,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
