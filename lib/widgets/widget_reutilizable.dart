@@ -35,10 +35,10 @@ class WidgetReutilizable extends StatelessWidget {
                 children: [
                   FadeInImage(
                     image: NetworkImage(imagenUrl),
-                    placeholder: const AssetImage('assets/Loading_icon.gif'), // Imagen de carga
+                    placeholder: const AssetImage('assets/Loading_icon.gif'),
                     width: double.infinity,
                     fit: BoxFit.contain,
-                    fadeInDuration: const Duration(milliseconds: 2000), // Duración de la animación de entrada
+                    fadeInDuration: const Duration(milliseconds: 2000),
                     imageErrorBuilder: (context, error, stackTrace) {
                       return const SizedBox(
                         height: 200,
@@ -51,6 +51,14 @@ class WidgetReutilizable extends StatelessWidget {
                         ),
                       );
                     },
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      descripcion,
+                      style: const TextStyle(fontSize: 16),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ],
               ),
