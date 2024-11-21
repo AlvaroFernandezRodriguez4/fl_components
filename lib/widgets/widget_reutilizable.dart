@@ -30,7 +30,7 @@ class WidgetReutilizable extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(4),
               ),
-              elevation: 8, 
+              elevation: 8,
               child: Column(
                 children: [
                   FadeInImage(
@@ -62,6 +62,15 @@ class WidgetReutilizable extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue, foregroundColor: Colors.white),
+              child: const Text('Volver'),
             ),
           ],
         ),
