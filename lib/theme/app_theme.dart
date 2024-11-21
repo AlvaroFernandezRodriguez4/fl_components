@@ -19,6 +19,13 @@ class AppTheme {
         //TextButton Theme
         textButtonTheme: TextButtonThemeData(
           style: TextButton.styleFrom(foregroundColor: primary)
+        ),
+        //FloatingActionButtom
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          backgroundColor: primary,
+          shape: StadiumBorder(),
+          elevation: 5,
+          foregroundColor: Colors.white
         )
   );
 

@@ -14,7 +14,7 @@ class Listview2Screen extends StatelessWidget {
             foregroundColor: Colors.white),
         body: ListView.separated(
             itemBuilder: (context, index) => ListTile(
-                    trailing: Icon(Icons.arrow_forward_ios_sharp),
+                    trailing: const Icon(Icons.arrow_forward_ios_sharp),
                     title: Text(options[index]),
                   ),
             separatorBuilder: (context, index) => const Divider(),

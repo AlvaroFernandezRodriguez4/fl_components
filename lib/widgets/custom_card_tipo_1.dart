@@ -13,9 +13,9 @@ class CustomCardTipo1 extends StatelessWidget {
         children: [
           const ListTile(
             leading: Icon(Icons.photo_album_outlined, color: AppTheme.primary),
-            title: Text('Título de la tarjeta'),
+            title: Text('Beetlejuice'),
             subtitle: Text(
-                'Ea duis aute cillum ipsum duis duis ex nostrud ad irure cillum. Aliquip cupidatat eiusmod magna elit excepteur ullamco. Tempor et sunt officia deserunt excepteur. In esse duis sint consequat est magna fugiat dolore. Magna dolor laborum sint elit quis nisi tempor occaecat. Ex exercitation amet proident ut ipsum eiusmod reprehenderit reprehenderit duis. Consectetur ex nulla nulla minim velit cupidatat sit.'),
+                'Lester Green, más conocido como Beetlejuice, es una personalidad de la cultura pop estadounidense, actor y comediante. Nacido el 2 de junio de 1968 en Jersey City, Nueva Jersey, es reconocido por su carisma único y su humor excéntrico. Beetlejuice alcanzó la fama como uno de los miembros más queridos del "Wack Pack" del The Howard Stern Show, donde sus intervenciones hilarantes y espontáneas lo convirtieron en un ícono del programa.\n\nA pesar de tener enanismo y microcefalia, condiciones que afectan su apariencia física y desarrollo cognitivo, Beetlejuice ha logrado destacarse en la industria del entretenimiento. Ha aparecido en películas como Bubble Boy (2001) y en videos musicales, ganándose una legión de fans por su personalidad auténtica y desinhibida.\n\nAdemás de su carrera en los medios, Beetlejuice es una figura viral en internet, con memes y videos que celebran su singular sentido del humor. Su legado como una de las figuras más memorables del entretenimiento alternativo continúa vigente, trascendiendo generaciones y plataformas.'),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
