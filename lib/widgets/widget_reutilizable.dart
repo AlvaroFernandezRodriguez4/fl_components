@@ -19,12 +19,19 @@ class WidgetReutilizable extends StatelessWidget {
         title: Text(titulo),
         backgroundColor: Colors.blue,
       ),
-      body: const Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16.0),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
+            Card(
+              clipBehavior: Clip.antiAlias,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(4),
+              ),
+              elevation: 8, 
+            )
           ],
         ),
       ),
