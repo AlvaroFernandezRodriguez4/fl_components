@@ -30,28 +30,32 @@ class Listview1Screen extends StatelessWidget {
                       case 'Targaryen':
                         return const WidgetReutilizable(
                           titulo: 'Targaryen',
-                          descripcion: 'Casa de dragones y fuego.',
+                          descripcion:
+                              'La Casa Targaryen, de ascendencia Valyria, gobernó los Siete Reinos durante casi trescientos años desde Desembarco del Rey, Rocadragón y Refugio Estival. Su emblema es un dragón de tres cabezas, y su lema es "Fuego y Sangre". Las espadas ancestrales de acero valyrio, Fuegoscuro y Hermana Oscura, están desaparecidas.',
                           imagenUrl:
                               'https://static.wikia.nocookie.net/hieloyfuego/images/4/4d/Casa_Targaryen_estandarte.png/revision/latest?cb=20161230200319.jpg',
                         );
                       case 'Stark':
                         return const WidgetReutilizable(
                           titulo: 'Stark',
-                          descripcion: 'Casa del norte, leales y fuertes.',
+                          descripcion:
+                              'La Casa Stark de Invernalia es una casa noble del Norte. Su asentamiento es Invernalia. Durante siglos, fue la casa principal del Norte y su linaje se extiende hasta los Primeros Hombres, gobernando el Norte como reyes por derecho propio. Su emblema es un lobo huargo de cenizo corriendo sobre campo de plata. Su lema es Se acerca el Invierno. Su mandoble ancestral de acero valyrio se llamaba Hielo.',
                           imagenUrl:
                               'https://static.wikia.nocookie.net/hieloyfuego/images/3/32/Casa_Stark_escudo.png/revision/latest?cb=20240922215518.jpg',
                         );
                       case 'Lannister':
                         return const WidgetReutilizable(
                           titulo: 'Lannister',
-                          descripcion: 'Casa de oro y poder.',
+                          descripcion:
+                              'La Casa Lannister de Roca Casterly es la principal casa noble de las Tierras del Oeste. Su asentamiento es Roca Casterly. Su emblema es un león rampante de oro sobre campo de gules. Su lema es ¡Oye mi Rugido!, aunque su lema no oficial, Un Lannister siempre paga sus deudas, es más conocido.',
                           imagenUrl:
                               'https://static.wikia.nocookie.net/hieloyfuego/images/6/66/Casa_Lannister_escudo.png/revision/latest?cb=20161230202341.jpg',
                         );
                       case 'Baratheon':
                         return const WidgetReutilizable(
                           titulo: 'Baratheon',
-                          descripcion: 'Casa del trueno y la tormenta.',
+                          descripcion:
+                              'La Casa Baratheon de Bastión de Tormentas es una casa noble de las Tierras de la Tormenta. Su asentamiento es Bastión de Tormentas, que fue residencia de la Casa Durrandon, los antiguos Reyes de la Tormenta. Su emblema es un venado coronado de sable sobre campo de oro. Su lema es Nuestra es la Furia.',
                           imagenUrl:
                               'https://static.wikia.nocookie.net/hieloyfuego/images/1/13/Casa_Baratheon_estandarte.png/revision/latest?cb=20161230200810.jpg',
                         );
