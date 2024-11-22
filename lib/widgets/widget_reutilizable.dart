@@ -4,12 +4,16 @@ class WidgetReutilizable extends StatelessWidget {
   final String titulo;
   final String descripcion;
   final String imagenUrl;
+  final Color? colorAppBar;
+  final Color? colorBoton;
 
   const WidgetReutilizable({
     super.key,
     required this.titulo,
     required this.descripcion,
     required this.imagenUrl,
+    this.colorAppBar,
+    this.colorBoton
   });
 
   @override
@@ -17,7 +21,7 @@ class WidgetReutilizable extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(titulo),
-        backgroundColor: Colors.blue,
+        backgroundColor: colorAppBar ?? Colors.blue,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
@@ -69,7 +73,7 @@ class WidgetReutilizable extends StatelessWidget {
                 Navigator.pop(context);
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.blue, 
+                backgroundColor: colorBoton ?? Colors.blue, 
                 foregroundColor: Colors.white
               ),
               child: const Text('Volver'),

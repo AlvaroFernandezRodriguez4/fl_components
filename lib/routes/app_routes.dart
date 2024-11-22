@@ -13,8 +13,8 @@ class AppRoutes {
         screen: const HomeScreen()),
     MenuOption(
         route: 'listview1',
-        icon: Icons.house_rounded,
-        name: 'ListView 1',
+        icon: Icons.castle,
+        name: 'Casas Juego de Tronos',
         screen: const Listview1Screen()),
     MenuOption(
         route: 'listview2',
@@ -27,7 +27,7 @@ class AppRoutes {
         name: 'Alertas',
         screen: const AlertScreen()),
     MenuOption(
-        route: 'caed',
+        route: 'card',
         icon: Icons.house_rounded,
         name: 'Cards (Tarjetas)',
         screen: const CardScreen())
