@@ -24,11 +24,11 @@ class WidgetReutilizable extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(height: 20),
+            const SizedBox(height: 20), 
             Card(
               clipBehavior: Clip.antiAlias,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(4),
+                borderRadius: BorderRadius.circular(4), 
               ),
               elevation: 8,
               child: Column(
@@ -41,7 +41,7 @@ class WidgetReutilizable extends StatelessWidget {
                     fadeInDuration: const Duration(milliseconds: 2000),
                     imageErrorBuilder: (context, error, stackTrace) {
                       return const SizedBox(
-                        height: 200,
+                        height: 200, 
                         child: Center(
                           child: Icon(
                             Icons.broken_image,
@@ -63,13 +63,15 @@ class WidgetReutilizable extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 20), 
             ElevatedButton(
               onPressed: () {
                 Navigator.pop(context);
               },
               style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue, foregroundColor: Colors.white),
+                backgroundColor: Colors.blue, 
+                foregroundColor: Colors.white
+              ),
               child: const Text('Volver'),
             ),
           ],
