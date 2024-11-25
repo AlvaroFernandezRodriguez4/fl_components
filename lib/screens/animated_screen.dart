@@ -13,16 +13,16 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
   double _height = 50;
   Color _color = Colors.green;
   BorderRadiusGeometry _borderRadius = BorderRadius.circular(10);
-  Curve _animationCurve = Curves.easeInOut; 
+  Curve _animationCurve = Curves.easeInOut;
 
   final Random _random = Random();
 
   Color _getRandomColor() {
     return Color.fromRGBO(
-      _random.nextInt(256), 
-      _random.nextInt(256), 
-      _random.nextInt(256), 
-      1, 
+      _random.nextInt(256),
+      _random.nextInt(256),
+      _random.nextInt(256),
+      1,
     );
   }
 
@@ -33,21 +33,43 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
       Curves.easeInOut,
       Curves.bounceIn,
       Curves.bounceOut,
+      Curves.bounceInOut,
       Curves.elasticIn,
       Curves.elasticOut,
+      Curves.elasticInOut,
       Curves.linear,
       Curves.fastOutSlowIn,
+      Curves.slowMiddle,
+      Curves.decelerate,
+      Curves.easeInCirc,
+      Curves.easeOutCirc,
+      Curves.easeInOutCirc,
+      Curves.easeInCubic,
+      Curves.easeOutCubic,
+      Curves.easeInOutCubic,
+      Curves.easeInExpo,
+      Curves.easeOutExpo,
+      Curves.easeInOutExpo,
+      Curves.easeInQuad,
+      Curves.easeOutQuad,
+      Curves.easeInOutQuad,
+      Curves.easeInQuart,
+      Curves.easeOutQuart,
+      Curves.easeInOutQuart,
+      Curves.easeInQuint,
+      Curves.easeOutQuint,
+      Curves.easeInOutQuint,
     ];
     return curves[_random.nextInt(curves.length)];
   }
 
   void _changeShape() {
     setState(() {
-      _width = _random.nextDouble() * 200 + 50; 
-      _height = _random.nextDouble() * 200 + 50; 
+      _width = _random.nextDouble() * 200 + 50;
+      _height = _random.nextDouble() * 200 + 50;
       _color = _getRandomColor();
-      _borderRadius = BorderRadius.circular(_random.nextDouble() * 100); 
-      _animationCurve = _getRandomCurve(); 
+      _borderRadius = BorderRadius.circular(_random.nextDouble() * 100);
+      _animationCurve = _getRandomCurve();
     });
   }
 
@@ -55,12 +77,13 @@ class _AnimatedScreenState extends State<AnimatedScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('AnimatedContainer con colores, forma y animación random'),
+        title: const Text(
+            'AnimatedContainer con colores, forma y animación random'),
       ),
       body: Center(
         child: AnimatedContainer(
           duration: const Duration(seconds: 1),
-          curve: _animationCurve, 
+          curve: _animationCurve,
           width: _width,
           height: _height,
           decoration: BoxDecoration(
