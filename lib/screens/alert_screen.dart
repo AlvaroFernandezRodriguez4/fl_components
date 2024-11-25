@@ -7,11 +7,12 @@ class AlertScreen extends StatelessWidget {
   void displayDialog(BuildContext context){
    // print('Hola mundo');ç
    showDialog(
-    barrierDismissible: true,
+    barrierDismissible: false,
     context: context, 
     builder: (context){
       return AlertDialog(
         title: Text('Alerta'),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadiusDirectional.circular(10)),
         content:
         Column(
           mainAxisSize: MainAxisSize.min,
@@ -21,6 +22,11 @@ class AlertScreen extends StatelessWidget {
             FlutterLogo(size: 100,)
           ],
         ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: Text('Cerrar'))
+        ],
         
       );
     }
