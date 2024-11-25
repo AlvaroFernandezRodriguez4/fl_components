@@ -30,18 +30,27 @@ class AppRoutes {
         route: 'card',
         icon: Icons.house_rounded,
         name: 'Cards (Tarjetas)',
-        screen: const CardScreen())
+        screen: const CardScreen()),
+    MenuOption(
+        route: 'avatar',
+        icon: Icons.person,
+        name: 'Avatar',
+        screen: const AvatarScreen()),
+    MenuOption(
+        route: 'animated',
+        icon: Icons.person,
+        name: 'Animated Container',
+        screen: const AnimatedScreen()),        
   ];
 
-  static Map<String, Widget Function(BuildContext)> getAppRoutes(){
+  static Map<String, Widget Function(BuildContext)> getAppRoutes() {
     Map<String, Widget Function(BuildContext)> appRoutes = {};
 
     for (final option in MenuOptions) {
-      appRoutes.addAll({option.route : (BuildContext context)=>option.screen});
+      appRoutes.addAll({option.route: (BuildContext context) => option.screen});
     }
     return appRoutes;
   }
-  
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
     return MaterialPageRoute(builder: (context) => const AlertScreen());
