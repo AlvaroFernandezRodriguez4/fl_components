@@ -35,6 +35,17 @@ class AppTheme {
             shape: StadiumBorder(),
             elevation: 5,
           )
+        ),
+        //InputDecoration
+        inputDecorationTheme: InputDecorationTheme(
+          floatingLabelStyle: const TextStyle(color: primary),
+          enabledBorder: OutlineInputBorder(
+            borderSide: const BorderSide(color: primary),
+            borderRadius: BorderRadius.circular(10)
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10) 
+          )
         )
   );
 
