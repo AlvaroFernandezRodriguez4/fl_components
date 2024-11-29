@@ -20,6 +20,7 @@ class InputsScreen extends StatelessWidget {
               helperText: 'Solo letras',
               icon: Icons.verified_outlined,
               suffixIcon: Icons.person_2_rounded,
+              obscureText: false,
             ),
             SizedBox(height: 30),
             CustomTextFormField(
@@ -28,6 +29,7 @@ class InputsScreen extends StatelessWidget {
               helperText: 'Solo letras',
               icon: Icons.verified_outlined,
               suffixIcon: Icons.person_2_rounded,
+              obscureText: false,
             ),
             SizedBox(height: 30),
             CustomTextFormField(
@@ -36,6 +38,7 @@ class InputsScreen extends StatelessWidget {
               helperText: 'Solo números',
               icon: Icons.verified_outlined,
               suffixIcon: Icons.person_2_rounded,
+              obscureText: false,
             ),
             SizedBox(height: 30),
             CustomTextFormField(
@@ -44,6 +47,14 @@ class InputsScreen extends StatelessWidget {
               icon: Icons.verified_outlined,
               suffixIcon: Icons.person_2_rounded,
               keyboardType: TextInputType.emailAddress,
+              obscureText: false,
+            ),
+            SizedBox(height: 30),
+            CustomTextFormField(
+              hintText: 'Contraseña',
+              labelText: 'Contraseña',
+              icon: Icons.password_outlined,
+              obscureText: true,
             ),
           ],
         ),
