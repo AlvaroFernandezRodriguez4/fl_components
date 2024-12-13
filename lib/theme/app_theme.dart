@@ -38,15 +38,23 @@ class AppTheme {
         ),
         //InputDecoration
         inputDecorationTheme: InputDecorationTheme(
-          floatingLabelStyle: const TextStyle(color: primary),
-          enabledBorder: OutlineInputBorder(
-            borderSide: const BorderSide(color: primary),
-            borderRadius: BorderRadius.circular(10)
-          ),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(10) 
-          )
+            floatingLabelStyle: TextStyle( color: primary),
+            enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: primary),
+              borderRadius: BorderRadius.circular(10)
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(color: primary),
+              borderRadius: BorderRadius.circular(10)
+            ),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10)
+            )
+        ),
+        sliderTheme: SliderThemeData(
+          activeTrackColor: primary, 
+          thumbColor: primary
         )
-  );
-
+        
+      );
 }
